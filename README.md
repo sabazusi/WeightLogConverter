@@ -1,1 +1,8 @@
-usage: ./converter.py ${type} file1 file2 ....
+WeightLogConverter
+====
+スマートフォンなどの体重記録アプリのログを、まとめて対象のアプリのインポート可能形式ファイルに変換するスクリプトです。
+
+使い方:
+```
+$python converter.py -m 出力モード ログファイル...
+```
