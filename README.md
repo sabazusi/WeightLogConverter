@@ -8,6 +8,7 @@ $python converter.py -m 出力モード ログファイル...
 
 // SimpleDiet形式で出力
 $python converter.py -m sd 2012_sd.csv 2013_rs.csv
+Convert Finished: Output 1411092311.csv
 ```
 
 対応アプリケーション
