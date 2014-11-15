@@ -26,7 +26,7 @@ if __name__ == '__main__':
 
     convartables = []
     for file in files:
-        convartables.append(reader.read_as_convertable(file))
+        convartables.extend(reader.read_as_convertable(file))
+
 
     output = builder.build(convartables)
-    print(output)
