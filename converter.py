@@ -23,7 +23,10 @@ if __name__ == '__main__':
 
     reader = ApplicationWeightLogReader()
     builder = ApplicationWeightLogBuilder(mode)
-    # for filename in files:
-        # convertable_logs.append(reader.read_as_convertable(filename)
-    output = builder.build( map(reader.read_as_convertable, files) )
+
+    convartables = []
+    for file in files:
+        convartables.append(reader.read_as_convertable(file))
+
+    output = builder.build(convartables)
     print(output)
